@@ -17,10 +17,10 @@ Panasonic query, answer and commands are using 8-bit Checksum to verify serial d
 To get information from heat pump, "magic" packet should be send to CN-CNT:
 
 ```
-71 6c 01 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12
+0x70 0x0a 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x86
 ```
 
-## Protocol byte decrypt info ?:
+# Protocol byte decrypt info ?:
 
 Best reference for my heat pump is: https://github.com/hotswapster/panasonic-aircon-wifi
 
