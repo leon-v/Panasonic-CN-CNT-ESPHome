@@ -26,9 +26,9 @@ Best reference for my heat pump is: https://github.com/hotswapster/panasonic-air
 
 Soem very good reading about the protocol is: https://github.com/Egyras/HeishaMon
 
-## Test log:
+# Test log:
 
-# 12-02-2021
+## 12-02-2021
 Connected USB to UART to pins.
 Noticed 5V on RX on the CN-CNT port. None the less, my adapter could drive it low(ish) to about 600mV.
 I used the baud rate of 9600 since that is what i saw in HeishaMon [here](https://github.com/Egyras/HeishaMon/blob/697f6bd188d022d86f5908e06a0ea74835cda384/HeishaMon/HeishaMon.ino#L386).
