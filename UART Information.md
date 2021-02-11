@@ -25,3 +25,52 @@ To get information from heat pump, "magic" packet should be send to CN-CNT:
 Best reference for my heat pump is: https://github.com/hotswapster/panasonic-aircon-wifi
 
 Soem very good reading about the protocol is: https://github.com/Egyras/HeishaMon
+
+## Test log:
+
+Connected USB to UART to pins.
+Noticed 5V on RX on the CN-CNT port. None the less, my adapter could drive it low(ish) to about 600mV.
+I used the baud rate of 9600 since that is what i saw in HeishaMon [here](https://github.com/Egyras/HeishaMon/blob/697f6bd188d022d86f5908e06a0ea74835cda384/HeishaMon/HeishaMon.ino#L386).
+
+Upon power up of the heat pump (by switcing the power supply to it off then on again) i recieved:
+```
+0x42 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+```
+
+After the next power up, i recieved:
+```
+0x30 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+```
+
+I would expect something more consistient, i am questioning the baud rate of this.
+
+I ended up trying different baud rates and powering down and up, but i only ever recieved:
+```
+0x00
+```
+
+So not i also question the USB->UART board i am using.
+
+To debug this furhter, i will connect an oscilloscope to TX and check the signal.
+
+
+While connected i also tried to send these packets:
+
+Magic:
+```
+0x70 0x0a 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x86
+```
+
+Set louver down low:
+```
+0xf0 0x0a 0x34 0x34 0x00 0xa0 0x5c 0x00 0x00 0x00 0x00 0x00 0xa2
+```
+
+Cool mode:
+```
+0xf0 0x0a 0x34 0x34 0x00 0xa0 0xfd 0x00 0x00 0x00 0x00 0x00 0x01
+```
+
+None of these had any response from the unit.
+
+So far, the heat pump remains deaf and mostly mute to me.
