@@ -25,5 +25,3 @@ To get information from heat pump, "magic" packet should be send to CN-CNT:
 Best reference for my heat pump is: https://github.com/hotswapster/panasonic-aircon-wifi
 
 Soem very good reading about the protocol is: https://github.com/Egyras/HeishaMon
-
-Test change
