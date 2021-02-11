@@ -45,6 +45,15 @@ After the next power up, i recieved:
 
 I would expect something more consistient, i am questioning the baud rate of this.
 
+```
+0x42 = 1000010
+0x30 = 0110000
+Visualising the binary to look for patters that may indicate baud rate issues.
+Conclusion: Not much to go on. seeing 11 could imply baud too slow.
+I struggle to beelive that its not data, since there must have been many cycles to get that many 0x00 values.
+The scope trace will answer my Qs.
+```
+
 I ended up trying different baud rates and powering down and up, but i only ever recieved:
 ```
 0x00
