@@ -125,4 +125,4 @@ Yea that's perfect. Nothing wrong with the data.
 RE: `Noticed 5V on RX on the CN-CNT port.`
 
 Looked for an internal schematic i had seen before and found it:
-![CN-CNT internal schematic](./Service Manuals/CN-CNT Internal Schematic.PNG)
+![CN-CNT internal schematic](./Service%20Manuals/CN-CNT%20Internal%20Schematic.PNG)
