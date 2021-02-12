@@ -121,3 +121,8 @@ f1+6c+01+10+00+00+00+18 = 186. (186 XOR FF) + 1 = 17A Good!
 Yea that's perfect. Nothing wrong with the data.
 
 ```
+
+RE: `Noticed 5V on RX on the CN-CNT port.`
+
+Looked for an internal schematic i had seen before and found it:
+![CN-CNT internal schematic](./Service Manuals/CN-CNT Internal Schematic.PNG)
