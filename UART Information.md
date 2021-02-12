@@ -1,5 +1,6 @@
 # CN-CNT Pinout
 ```
+9600 8N1
 CN-CNT Pin-out (from top to bottom)
 1 - +5V (250mA)
 2 - 0-5V TX
@@ -125,4 +126,14 @@ Yea that's perfect. Nothing wrong with the data.
 RE: `Noticed 5V on RX on the CN-CNT port.`
 
 Looked for an internal schematic i had seen before and found it:
+
 ![CN-CNT internal schematic](./Service%20Manuals/CN-CNT%20Internal%20Schematic.PNG)
+
+Here i can see:
+```
+1 - +5V (250mA) Has inductor & capactor.
+2 - 0-5V TX Has 10K pullup to 5V
+3 - 0-5V RX Has 10K pullup to 5V
+4 - +12V (250mA) Has inductor & capactor.
+5 - GND
+```
