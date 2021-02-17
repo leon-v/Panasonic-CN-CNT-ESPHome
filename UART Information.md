@@ -137,3 +137,14 @@ Here i can see:
 4 - +12V (250mA) Has inductor & capactor.
 5 - GND
 ```
+
+
+## 16-02-2021
+Tried using a bus level converter to boost the signal to the heat pump, but failed at all attempts.
+I put the oscilloscope on the output and strangely, it would go into a mode where there was nothing but high frequency noise after any data was sent.
+I think the bi-directional level converter was going into and out of output mode.
+I never managed to test the baud rate of the data that comes in when the unit is powered on.
+
+For my next try, I'll make an open drain circuit to drive TX.
+Which may be why Egyras/HeishaMon has done this with their circuit design.
+I'll be copying that driving circuit.
