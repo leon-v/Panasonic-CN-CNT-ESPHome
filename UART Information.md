@@ -148,3 +148,6 @@ I never managed to test the baud rate of the data that comes in when the unit is
 For my next try, I'll make an open drain circuit to drive TX.
 Which may be why Egyras/HeishaMon has done this with their circuit design.
 I'll be copying that driving circuit.
+
+# References
+https://github.com/Egyras/HeishaMon, https://github.com/DomiStyle/esphome-panasonic-ac
